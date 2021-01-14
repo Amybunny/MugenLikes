@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN",
+	"メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color:#0f1419;
+}
+
+:focus {
+    outline: none;
+}
+
+.active{
+	opacity:1;
+}
+
+.active:hover{
+	cursor:pointer;
+}
+
+.err{
+	color:#e02452;
+}
+
+.btn:active{
+	position:relative;
+	top:5px;
+}
+
+.likebtn:active{
+	position:relative;
+	top:5px;
+}
+
+.title{
+	text-align: center;
+	font-size:40px;
+	margin:16px 0;
+	font-family: 'Hachi Maru Pop', cursive;
+}
+
+.infotext{
+	font-size:16px;
+	text-align: center;
+}
+
+.count{
+	font-size:14px;
+	color:#666;
+	text-align: right;
+	margin: 0;
+}
+
+.btn-create{
+	width:64px;
+}
+
+.btn-sample{
+	width:200px;
+}
+
+.or-info{
+	margin:8px auto;
+	color:#707070;
+}
+
+.main-info{
+	font-size:14px;
+	color:#707070;
+}
+
+.back-info{
+	display:block;
+	color:#00acee;
+	margin-top:16px;
+}
+
+.likebtn{
+	text-decoration:none;
+	color:#e02452;
+	margin-right:8px;
+}
+
+.btn{
+	display:block;
+	margin: 0 auto;
+	background-color: #00acee;
+	height:40px;
+	border:none;
+	border-radius:10px;
+	color:#fff;
+	font-size:20px;
+	outline:none;
+	opacity:0.7;
+}
+
+.active{
+	opacity:1;
+}
+
+@media screen and (max-width: 767px){
+
+.input-area{
+	width: 85%;
+	margin: 0 auto 16px auto;
+}
+
+.textbox{
+	display:block;
+	border:1px solid #aaa;
+	border-radius:3px;
+	width:100%;
+	height:120px;
+	padding:8px;
+	box-sizing:border-box;
+}
+
+.contents-area{
+	border:1px solid #aaa;
+	border-radius:3px;
+	width:80%;
+	min-height:150px;
+	margin: 0 auto 16px auto;
+	padding:8px;
+}
+
+.sentence{
+	font-size:12px;
+	line-height:1.5;
+}
+
+.like-area{
+	display:flex;
+	color:#e02452;
+	font-size:48px;
+	width:80%;
+	margin: 0 auto;
+}
+
+}
+
+@media screen and (min-width:768px){
+
+.input-area{
+	width: 50%;
+	margin: 0 auto 16px auto;
+}
+
+.textbox{
+	display:block;
+	border:1px solid #aaa;
+	border-radius:3px;
+	width:100%;
+	height:120px;
+	padding:8px;
+	box-sizing:border-box;
+}
+
+.contents-area{
+	border:1px solid #aaa;
+	border-radius:3px;
+	width:50%;
+	min-height:150px;
+	margin: 0 auto;
+	padding:8px;
+}
+
+.like-area{
+	display:flex;
+	color:#e02452;
+	font-size:48px;
+	width:50%;
+	margin: 0 auto;
+}
+
+}
