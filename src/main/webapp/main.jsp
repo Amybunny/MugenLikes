@@ -19,7 +19,7 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 		<h1 class="title">無限いいね</h1>
 		<p class="infotext main-info">ハートを押すといいねが増えるよ！</p>
 		<div class="contents-area">
-			<p class="sentence"><%= st.getSentence() %>></p>
+			<p class="sentence"><%= st.getSentence() %></p>
 		</div>
 		<div class="like-area">
 			<a class="likebtn" href="/Main?action=like"><i class="fas fa-heart"></i></a>
