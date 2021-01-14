@@ -17,9 +17,9 @@
 			<textarea id="textbox" class="textbox" name="sentence"></textarea>
 			<p class="count"><span id="count">0</span>/140</p>
 		</div>
-		<input id="btn-create" class="btn btn-create" type="submit" value="作成" />
+		<input id="btn-create" class="btn btn-create" type="submit" name="submit" value="作成" />
 		<p class="infotext or-info">or</p>
-		<input id="btn-sample" class="btn btn-sample active" type="submit" value="サンプル文を使う" />
+		<input id="btn-sample" class="btn btn-sample active" type="submit" name="submit" value="サンプル文を使う" />
 	</form>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="main.js"></script>

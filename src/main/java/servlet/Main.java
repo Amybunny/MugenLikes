@@ -59,14 +59,12 @@ public class Main extends HttpServlet {
 
 		request.setCharacterEncoding("UTF-8");
 		String sentence = request.getParameter("sentence");
+		String submit = request.getParameter("submit");
 		Sentence st = null;
-		if(sentence.length() == 0) {
+		if(submit.equals("サンプル文を使う")) {
 			int r = new java.util.Random().nextInt(3);
 			st = new Sentence(example[r]);
-		}else if(sentence.length() > 140){
-			int r = new java.util.Random().nextInt(3);
-			st = new Sentence(example[r]);
-		}else {
+		}else{
 			st = new Sentence(sentence);
 		}
 
