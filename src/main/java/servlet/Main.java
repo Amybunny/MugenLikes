@@ -63,10 +63,11 @@ public class Main extends HttpServlet {
 		if(sentence.length() == 0) {
 			int r = new java.util.Random().nextInt(3);
 			st = new Sentence(example[r]);
-			System.out.println("サンプル文章"+st);
+		}else if(sentence.length() > 140){
+			int r = new java.util.Random().nextInt(3);
+			st = new Sentence(example[r]);
 		}else {
 			st = new Sentence(sentence);
-			System.out.println("入力文章:"+st);
 		}
 
 		session.setAttribute("sentence", st);
