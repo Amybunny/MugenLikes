@@ -19,6 +19,7 @@ $countUp.on('keyup',function(){
 	}else if($val == 140){
 		$countView.removeClass('err');
 		$sampleBtn.prop("disabled",true).removeClass('active');
+		$createBtn.prop("disabled",false).addClass('active');
 	}else if($val > 0 && $val < 140){
 		$countView.removeClass('err');
 		$createBtn.prop("disabled",false).addClass('active');
