@@ -16,7 +16,7 @@
 			<p class="sentence">${sentence.sentence}</p>
 		</div>
 		<div class="like-area">
-			<a class="likebtn" href="/MugenLike/Main?action=like"><i class="fas fa-heart"></i></a>
+			<a class="likebtn" href="/Main?action=like"><i class="fas fa-heart"></i></a>
 			<p class="ev">${EV.like}</p>
 		</div>
 		<a class="infotext back-info" href="/Top">最初に戻る</a>
