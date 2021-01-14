@@ -21,7 +21,7 @@ public class Top extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		session.removeAttribute("EV");
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/jsp/top.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
 		rd.forward(request, response);
 	}
 
