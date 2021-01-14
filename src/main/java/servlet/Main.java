@@ -42,7 +42,7 @@ public class Main extends HttpServlet {
 		session.setAttribute("EV",ev);
 
 		//フォワード
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/main.jsp");
 		rd.forward(request, response);
 	}
 
@@ -72,7 +72,7 @@ public class Main extends HttpServlet {
 		session.setAttribute("sentence", st);
 		session.setAttribute("EV", ev);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/main.jsp");
 		rd.forward(request, response);
 	}
 
