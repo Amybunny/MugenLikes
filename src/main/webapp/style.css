@@ -69,6 +69,11 @@ body{
 	color:#707070;
 }
 
+.sentence{
+	font-size:14px;
+	line-height:1.5;
+	width:100%
+}
 .main-info{
 	font-size:14px;
 	color:#707070;
@@ -129,10 +134,7 @@ body{
 	padding:8px;
 }
 
-.sentence{
-	font-size:14px;
-	line-height:1.5;
-}
+
 
 .like-area{
 	display:flex;
