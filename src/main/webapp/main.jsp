@@ -13,6 +13,7 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<title>無限いいね</title>
 	</head>
 	<body>
@@ -22,12 +23,24 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 			<p class="sentence"><%= st.getSentence() %></p>
 		</div>
 		<div class="like-area">
-			<a class="likebtn" href="/Main?action=like"><i class="fas fa-heart"></i></a>
+			<p class="likebtn"><i class="fas fa-heart"></i></p>
 			<p class="ev"><%= ev.getLike() %></p>
 		</div>
 		<a class="infotext back-info" href="/Top">最初に戻る</a>
+		<script>
+			$(function(){
+				$('.likebtn').on('click',function(){
+					$.ajax({
+						type:"GET",
+						url:"Main",
+						data:{likebtn:$(".likebtn").val()}
+					}).done(function(result){
+						$(".ev").html(result);
+					}).fail(function(){
+						alert("読み込み失敗");
+					})
+				})
+			})
+		</script>
 	</body>
 </html>
-
-<!-- ${EV.like} -->
-
