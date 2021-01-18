@@ -8,7 +8,6 @@ public class EV implements Serializable{
 		like = 0;
 	}
 
-	
 	public int getLike() {return like;}
 	public void setLike(int like) {this.like = like;}
 }
