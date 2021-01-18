@@ -22,11 +22,11 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 			<p class="sentence"><%= st.getSentence() %></p>
 		</div>
 		<div class="like-area">
-			<a class="likebtn" href="/Main?action=like"><i class="fas fa-heart"></i></a>
+			<a class="likebtn" href="/hei/Main?action=like"><i class="fas fa-heart"></i></a>
 			<p class="ev"><%= ev.getLike() %></p>
 		</div>
-		<a class="infotext back-info" href="/Top">最初に戻る</a>
+		<a class="infotext back-info" href="/hei/Top">最初に戻る</a>
 	</body>
 </html>
 
-
+<!-- ${EV.like} -->
