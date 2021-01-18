@@ -29,5 +29,4 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 	</body>
 </html>
 
-<!-- ${EV.like} -->
 
