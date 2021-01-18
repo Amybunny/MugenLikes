@@ -12,7 +12,7 @@
 <body>
 	<h1 class="title">無限いいね</h1>
 	<p class="infotext">いいねしたい文章を入力</p>
-	<form action="/hei/Main" method="post">
+	<form action="/Main" method="post">
 		<div class="input-area">
 			<textarea id="textbox" class="textbox" name="sentence"></textarea>
 			<p class="count"><span id="count">0</span>/140</p>
