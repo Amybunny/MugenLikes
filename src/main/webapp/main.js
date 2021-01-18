@@ -4,6 +4,7 @@ $createBtn = $('#btn-create');
 $sampleBtn = $('#btn-sample');
 $val = $countUp.val().length;
 
+
 if($val == 0){
 	$createBtn.prop("disabled",true);
 }
