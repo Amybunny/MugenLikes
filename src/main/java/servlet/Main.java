@@ -45,7 +45,6 @@ public class Main extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		HttpSession session = request.getSession();
-
 		EV ev = (EV) session.getAttribute("EV");
 
 		if(ev == null) {
