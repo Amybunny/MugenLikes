@@ -8,7 +8,6 @@ public class Sentence implements Serializable{
 		this.sentence = st;
 	}
 
-	
 	public String getSentence() {return sentence;}
 	public void setSentence(String st) {this.sentence = st;}
 }
