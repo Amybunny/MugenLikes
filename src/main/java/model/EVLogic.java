@@ -1,6 +1,5 @@
 package model;
 
-
 public class EVLogic {
 	public void like(EV ev) {
 		int count = ev.getLike();
