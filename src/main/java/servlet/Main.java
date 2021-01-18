@@ -23,37 +23,27 @@ public class Main extends HttpServlet {
 	public final String[] example = {"月曜日がはじマンデイ","ぴーりかぴりららぽぽりなぺーぺるとー","地球は青かった"};
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("get通信あり");
-		//セッションスコープに保存されたいいね数を取得
+		
 		HttpSession session = request.getSession();
 		EV ev = (EV) session.getAttribute("EV");
-
-
-		//リクエストパラメータの取得
+		
 		request.setCharacterEncoding("UTF-8");
 		String action = request.getParameter("likebtn");
 
-		//いいねの増加処理
 		EVLogic evLogic = new EVLogic();
 		if(action != null) {
 			evLogic.like(ev);
 		}
 
-		//セッションスコープにいいね数を保存
 		session.setAttribute("EV",ev);
 
 		PrintWriter out = response.getWriter();
 		out.print(ev.getLike());
 		System.out.println(ev.getLike());
-
-		//フォワード
-		//RequestDispatcher rd = request.getRequestDispatcher("/main.jsp");
-		//rd.forward(request, response);
 	}
 
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("post送信があります");
+		
 		HttpSession session = request.getSession();
 
 		EV ev = (EV) session.getAttribute("EV");
