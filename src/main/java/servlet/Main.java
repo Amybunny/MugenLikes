@@ -16,7 +16,7 @@ import model.EVLogic;
 import model.Sentence;
 
 
-@WebServlet("/")
+@WebServlet("/Main")
 public class Main extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
