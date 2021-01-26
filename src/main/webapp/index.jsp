@@ -8,6 +8,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 	<title>無限いいね</title>
+	<meta property="og:title" content="無限いいね" />
+	<meta property="og:description" content="気の済むまでいいねを押したい人に贈ります" />
+	<meta property="og:image" content="heart.png" />
+	<meta property="og:url" content="https://mugenlikesajax.herokuapp.com/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="無限いいね" />
+
+	<meta name="twitter:title" content="無限いいね" />
+	<meta name="twitter:description" content="気の済むまでいいねを押したい人に贈ります" />
+	<meta name="twitter:image" content="heart.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@Amybunnycarry" />
+	<meta name="twitter:creater" content="@Amybunnycarry" />
 </head>
 <body>
 	<h1 class="title">無限いいね</h1>
