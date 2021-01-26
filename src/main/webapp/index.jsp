@@ -21,6 +21,7 @@
 		<p class="infotext or-info">or</p>
 		<input id="btn-sample" class="btn btn-sample active" type="submit" name="submit" value="サンプル文を使う" />
 	</form>
+	<img src="heart.jpg">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="main.js"></script>
 </body>
