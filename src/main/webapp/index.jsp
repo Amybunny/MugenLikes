@@ -10,14 +10,14 @@
 	<title>無限いいね</title>
 	<meta property="og:title" content="無限いいね" />
 	<meta property="og:description" content="気の済むまでいいねを押したい人に贈ります" />
-	<meta property="og:image" content="heart.png" />
+	<meta property="og:image" content="/src/main/webapp/heart.png" />
 	<meta property="og:url" content="https://mugenlikesajax.herokuapp.com/" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="無限いいね" />
 
 	<meta name="twitter:title" content="無限いいね" />
 	<meta name="twitter:description" content="気の済むまでいいねを押したい人に贈ります" />
-	<meta name="twitter:image" content="heart.png" />
+	<meta name="twitter:image" content="/src/main/webapp/heart.png" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@Amybunnycarry" />
 	<meta name="twitter:creater" content="@Amybunnycarry" />
@@ -34,7 +34,7 @@
 		<p class="infotext or-info">or</p>
 		<input id="btn-sample" class="btn btn-sample active" type="submit" name="submit" value="サンプル文を使う" />
 	</form>
-	<img src="heart.png">
+	<img src="/src/main/webapp/heart.png">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="main.js"></script>
 </body>
