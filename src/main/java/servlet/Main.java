@@ -33,18 +33,23 @@ public class Main extends HttpServlet {
 
 		//EVLogicクラスのインスタンスを生成する
 		EVLogic evLogic = new EVLogic();
+		
 		//いいねボタンが押されていたら、EVLogicクラスのlikeメソッドを使っていいね数を増やす
 		if(action != null) {
 			evLogic.like(ev);
 		}
 
-		//いいねが増えたevをsessionに保存する
+		//いいね数をセッションに保存する
 		session.setAttribute("EV",ev);
 
-		
+		//画面表示処理
 		PrintWriter out = response.getWriter();
 		out.print(ev.getLike());
-		System.out.println(ev.getLike());
+		//System.out.println(ev.getLike());
+		
+		//フォワード
+		//RequestDispatcher rd = request.getRequestDispatcher("/main.jsp");
+		//rd.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
