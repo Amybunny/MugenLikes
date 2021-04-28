@@ -30,10 +30,11 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 		<script>
 			$(function(){
 				$('.likebtn').on('click',function(){
+					let likebtn = $("likebtn").val();
 					$.ajax({
 						type:"GET",
 						url:"Main",
-						data:{likebtn:$(".likebtn").val()}
+						data:{likebtn:likebtn}
 					}).done(function(result){
 						$(".ev").html(result);
 					}).fail(function(){
