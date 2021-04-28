@@ -45,7 +45,7 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 		<script>
 			$(function(){
 				$('.likebtn').on('click',function(){
-					let likebtn = $("likebtn").val();
+					let likebtn = $(".likebtn").val();
 					$.ajax({
 						type:"GET",
 						url:"Main",
