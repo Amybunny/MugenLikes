@@ -42,9 +42,9 @@ public class Main extends HttpServlet {
 		//セッションスコープにいいね数を保存
 		session.setAttribute("EV",ev);
 
-		//PrintWriter out = response.getWriter();
-		//out.print(ev.getLike());
-		System.out.println(ev.getLike());
+		PrintWriter out = response.getWriter();
+		out.print(ev.getLike());
+		//System.out.println(ev.getLike());
 
 		//フォワード
 		//RequestDispatcher rd = request.getRequestDispatcher("/main.jsp");
