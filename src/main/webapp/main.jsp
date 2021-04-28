@@ -2,7 +2,6 @@
 <%@ page import="model.EV" %>
 <%@ page import="model.Sentence" %>
 <%
-<!-- セッションからデータを取得する -->
 EV ev = (EV) session.getAttribute("EV");
 Sentence st = (Sentence) session.getAttribute("sentence");
 %>
