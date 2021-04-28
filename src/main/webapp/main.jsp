@@ -34,7 +34,8 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 					$.ajax({
 						type:"GET",
 						url:"Main",
-						data:{likebtn:likebtn}
+						data:{likebtn:likebtn},
+						dataType:"json"
 					}).done(function(result){
 						$(".ev").html(result);
 					}).fail(function(){
