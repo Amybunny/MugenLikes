@@ -2,6 +2,7 @@
 <%@ page import="model.EV" %>
 <%@ page import="model.Sentence" %>
 <%
+<!-- セッションからデータを取得する -->
 EV ev = (EV) session.getAttribute("EV");
 Sentence st = (Sentence) session.getAttribute("sentence");
 %>
@@ -51,6 +52,7 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 						url:"Main",
 						data:{likebtn:likebtn}
 					}).done(function(result){
+						console.log(result);
 						$(".ev").html(result);
 					}).fail(function(){
 						alert("読み込み失敗");
