@@ -30,6 +30,15 @@ Sentence st = (Sentence) session.getAttribute("sentence");
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@Amybunnycarry" />
 		<meta name="twitter:creater" content="@Amybunnycarry" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP22PYH4T0"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-ZP22PYH4T0');
+		</script>
 	</head>
 	<body>
 		<h1 class="title">無限いいね</h1>
